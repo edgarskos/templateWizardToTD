@@ -56,5 +56,4 @@ for template in cat.articles():
     templateData['params']=templateParams
     newText = '<noinclude><br clear="both"><templatedata>%s</templatedata></noinclude>'%json.dumps(templateData,ensure_ascii=False,indent=4)
     template.put(orgText+newText, 'הוספת templatedata עפי דף הפרמטרים')
-    break
 print('finished')
